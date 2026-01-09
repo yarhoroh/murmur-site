@@ -930,6 +930,15 @@ kbd {
         justify-content: center;
     }
 
+    .speed-stats {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .use-cases {
+        justify-content: center;
+    }
+
     .transcription-demo {
         max-width: 400px;
         height: 280px;
