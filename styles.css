@@ -877,6 +877,23 @@ kbd {
     margin-bottom: 16px;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
 .footer-copyright {
     color: var(--text-muted);
     font-size: 0.85rem;
