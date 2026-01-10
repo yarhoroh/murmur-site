@@ -243,13 +243,12 @@ body::after {
 
 .hero-badge {
     display: inline-block;
-    padding: 8px 16px;
-    background: var(--accent-light);
-    color: var(--accent);
-    font-size: 0.85rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
     font-weight: 600;
-    border-radius: 100px;
-    margin-bottom: 20px;
+    color: var(--text);
+    transform: rotate(-8deg);
+    margin-bottom: 16px;
 }
 
 .hero-content h1 {
@@ -272,7 +271,7 @@ body::after {
 
 .hero-subtitle-small {
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 24px;
     max-width: 480px;
 }
@@ -894,7 +893,7 @@ kbd {
 }
 
 .footer-links a {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -904,7 +903,7 @@ kbd {
 }
 
 .footer-copyright {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     font-size: 0.85rem;
 }
 
