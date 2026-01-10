@@ -21,19 +21,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-section, header {
-    scroll-snap-align: start;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-footer {
-    scroll-snap-align: start;
 }
 
 body {
