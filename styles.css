@@ -281,6 +281,10 @@ body::after {
     gap: 12px;
     margin-top: 30px;
     margin-bottom: 45px;
+    width: 100%;
+}
+.stamps-row .stamp-d {
+    flex: 1;
 }
 .stamp-d {
     display: inline-block;
@@ -291,6 +295,11 @@ body::after {
     font-size: 0.9rem;
     text-align: left;
     line-height: 1.6;
+}
+.stamp-d .stamp-icon {
+    color: var(--accent);
+    vertical-align: middle;
+    margin-right: 4px;
 }
 .stamp-d .stamp-title {
     font-weight: 700;
@@ -1015,7 +1024,12 @@ kbd {
     }
 
     .stamps-row {
+        flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .stamps-row .stamp-d {
+        flex: 0 0 calc(33.333% - 8px);
     }
 
     .stamp-d {
@@ -1069,7 +1083,7 @@ kbd {
     }
 
     .stamps-row .stamp-d {
-        width: 90%;
+        width: 80%;
     }
 
     .mic-circle.mic-circle-mobile {
