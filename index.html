@@ -91,14 +91,21 @@
 
     <main>
     <header class="hero">
-        <div class="container">
+        <div class="container" style="position: relative;">
+            <!-- Вариант C — Ribbon
+            <div class="stamp-c">
+                ⚖️ GDPR-friendly
+            </div>
+            -->
+            <!-- Вариант D — Card -->
             <div class="hero-row">
                 <div class="hero-content">
-                    <div class="hero-badge">3x faster than typing</div>
+                    <div class="hero-badge" style="position: relative;">100% OFFLINE. NO CLOUD.</div>
                     <h1>Voice to text<br><span class="highlight">instantly</span></h1>
                     <p class="hero-subtitle">Stop typing. Start speaking. Press and hold the hotkey, say what you need, release — text appears right where your cursor is. No switching apps, no copy-paste.</p>
-                    <p class="hero-subtitle-small">Works everywhere: Chrome, Word, Slack, VS Code, any application. 100% private — all processing happens locally on your device, your voice never leaves your computer.</p>
+                    <p class="hero-subtitle-small">Works everywhere: ChatGTP, Chrome, Word, Slack, VS Code, any application. 100% private — all processing happens locally on your device, <span style="color: var(--accent); font-weight: 600;">your voice never leaves your computer.</spanspan></p>
 
+                    <!--
                     <div class="speed-stats">
                         <div class="stat">
                             <span class="stat-number">150+</span>
@@ -110,7 +117,19 @@
                             <span class="stat-label">WPM typing</span>
                         </div>
                     </div>
+                    -->
+
+                    <div class="mic-circle mic-circle-mobile" style="margin-top: 70px;">
+                        <svg class="mic-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z" fill="currentColor"/>
+                            <path d="M17 11C17 13.76 14.76 16 12 16C9.24 16 7 13.76 7 11H5C5 14.53 7.61 17.43 11 17.92V21H13V17.92C16.39 17.43 19 14.53 19 11H17Z" fill="currentColor"/>
+                        </svg>
+                        <div class="waveform">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="hero-visual">
                     <div class="transcription-demo">
                         <div class="text-ribbon">
@@ -137,19 +156,30 @@
                     </div>
                 </div>
             </div>
-            <div class="use-cases">
-                <span class="use-case">Writers</span>
-                <span class="use-case">Developers</span>
-                <span class="use-case">Students</span>
-                <span class="use-case">Professionals</span>
-                <span class="use-case">Anyone who hates typing</span>
-                <span class="use-case">Content Creators</span>
-                <span class="use-case">Journalists</span>
-                <span class="use-case">Bloggers</span>
-                <span class="use-case">Lawyers</span>
-                <span class="use-case">Doctors</span>
-                <span class="use-case">Researchers</span>
-            </div>
+
+<div class="stamps-row">
+    <div class="stamp-d">
+        <div class="stamp-title">👨‍💻 Developers</div>
+        <div class="stamp-text">Dictate into any IDE<br>Offline = no NDA issues</div>
+    </div>
+    <div class="stamp-d">
+        <div class="stamp-title">⚖️ Legal professionals</div>
+        <div class="stamp-text">Client data stays local<br>GDPR-friendly dictation</div>
+    </div>
+    <div class="stamp-d">
+        <div class="stamp-title">🩺 Medical professionals</div>
+        <div class="stamp-text">Secure voice notes<br>No cloud, no risk</div>
+    </div>
+    <div class="stamp-d">
+        <div class="stamp-title">📰 Journalists</div>
+        <div class="stamp-text">Fast field notes<br>Source protection built-in</div>
+    </div>
+    <div class="stamp-d">
+        <div class="stamp-title">✍️ Writers</div>
+        <div class="stamp-text">Works offline anywhere<br>Focus on story, not typing</div>
+    </div>
+</div>
+           
         </div>
     </header>
 
@@ -324,7 +354,21 @@
             </div>
         </div>
     </section>
-
+    <section>
+<div class="use-cases container " style="justify-content: center; margin-bottom: 20px;">
+    <span class="use-case">Writers</span>
+    <span class="use-case">Developers</span>
+    <span class="use-case">Students</span>
+    <span class="use-case">Professionals</span>
+    <span class="use-case">Anyone who hates typing</span>
+    <span class="use-case">Content Creators</span>
+    <span class="use-case">Journalists</span>
+    <span class="use-case">Bloggers</span>
+    <span class="use-case">Lawyers</span>
+    <span class="use-case">Doctors</span>
+    <span class="use-case">Researchers</span>
+</div>
+    </section>
     <!-- Scroll to top button -->
     <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

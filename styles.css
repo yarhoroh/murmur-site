@@ -251,11 +251,61 @@ body::after {
     margin-bottom: 16px;
 }
 
+/* Stamp styles */
+.stamp-c {
+    position: fixed;
+    top: 50%;
+    right: -120px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform: translateY(-50%);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 100;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+.stamp-c:hover {
+    right: 0;
+}
+.mic-circle.mic-circle-mobile {
+    display: none !important;
+}
+
+.stamps-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+.stamp-d {
+    display: inline-block;
+    padding: 16px 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.6;
+}
+.stamp-d .stamp-title {
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+.stamp-d .stamp-text {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .highlight {
@@ -272,7 +322,7 @@ body::after {
 .hero-subtitle-small {
     font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     max-width: 480px;
 }
 
@@ -964,6 +1014,14 @@ kbd {
         justify-content: center;
     }
 
+    .stamps-row {
+        justify-content: center;
+    }
+
+    .stamp-d {
+        text-align: center;
+    }
+
     .speed-stats {
         margin-left: auto;
         margin-right: auto;
@@ -995,6 +1053,36 @@ kbd {
     .hero {
         padding: 100px 0 40px;
         min-height: auto;
+    }
+
+    .hero-content {
+        margin-top: 20px;
+    }
+
+    .hero-subtitle {
+        margin-top: 30px;
+    }
+
+    .stamps-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stamps-row .stamp-d {
+        width: 90%;
+    }
+
+    .mic-circle.mic-circle-mobile {
+        display: flex !important;
+        margin: 54px auto 50px;
+    }
+
+    .transcription-demo .mic-circle {
+        display: none;
+    }
+
+    .hero-visual {
+        display: none;
     }
 
     .text-ribbon {
