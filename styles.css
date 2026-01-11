@@ -241,14 +241,14 @@ body::after {
     align-items: center;
 }
 
-.hero-badge {
-    display: inline-block;
-    font-family: 'Caveat', cursive;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--text);
-    transform: rotate(-8deg);
+#handwriting-text {
+    transform: rotate(-6deg);
     margin-bottom: 16px;
+    min-height: 45px;
+}
+
+#handwriting-text svg {
+    overflow: visible;
 }
 
 /* Stamp styles */
